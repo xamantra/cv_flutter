@@ -6,7 +6,7 @@ final cv = CVData(
   title: "Flutter App Developer",
   introduction: "Hello there! I've been a flutter developer for 5 years now. Having a wide variety of experience ranging from flutter to backend technologies. I'm from the Philippines.",
   email: "mail@charlou.dev",
-  contactNumber: "+63 9274310585",
+  contactNumber: "+63 9391985951",
   contactType: "Phone",
   skillTags: [
     "Dart",
