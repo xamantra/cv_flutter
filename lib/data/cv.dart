@@ -5,7 +5,7 @@ final cv = CVData(
   name: "Charlou Aredidon",
   title: "Flutter App Developer",
   introduction: "Hello there! I've been a flutter developer for 5 years now. Having a wide variety of experience ranging from flutter to backend technologies. I'm from the Philippines.",
-  email: "mail@charlou.dev",
+  email: "xamantra.dev@gmail.com",
   contactNumber: "+63 9391985951",
   contactType: "Phone",
   skillTags: [
@@ -72,7 +72,7 @@ final cv = CVData(
         "Mobile development with Flutter",
       ],
       started: DateTime(2024, 2),
-      ended: DateTime(0), // year=0 means currently working
+      ended: DateTime(2024, 7), // year=0 means currently working
     ),
   ],
   projects: [
