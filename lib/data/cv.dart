@@ -6,7 +6,7 @@ final cv = CVData(
   title: "Flutter App Developer",
   introduction: "Hello there! I've been a flutter developer for 5 years now. Having a wide variety of experience ranging from flutter to backend technologies. I'm from the Philippines.",
   email: "xamantra.dev@gmail.com",
-  contactNumber: "+63 9391985951",
+  contactNumber: "09495823358",
   contactType: "Phone",
   skillTags: [
     "Dart",
@@ -85,10 +85,7 @@ final cv = CVData(
         "Firebase",
         "Analytics",
       ],
-      links: {
-        PlatformType.Android: "https://play.google.com/store/apps/details?id=com.zipptrip.lumi",
-        PlatformType.iOS: "https://apps.apple.com/us/app/lumi-ai-trip-planner/id6478133479",
-      },
+      links: {},
     ),
     CVProject(
       name: "Petagon",
@@ -101,7 +98,6 @@ final cv = CVData(
         "Nodejs",
       ],
       links: {
-        PlatformType.Android: "https://play.google.com/store/apps/details?id=com.petagon.app&pli=1",
         PlatformType.iOS: "https://apps.apple.com/ph/app/petagon-pet-care-simplified/id6443600472",
       },
     ),
@@ -114,7 +110,6 @@ final cv = CVData(
         "PHP",
       ],
       links: {
-        PlatformType.Android: "https://play.google.com/store/apps/details?id=com.wittymanager.my_timesheet",
         PlatformType.iOS: "https://apps.apple.com/us/app/my-timesheet-witty/id1475219085",
       },
     ),
@@ -154,7 +149,7 @@ final cv = CVData(
         "CI/CD",
       ],
       links: {
-        PlatformType.Android: "https://play.google.com/store/apps/details?id=dev.xamantra.quantz",
+        PlatformType.Android: "https://github.com/quantz-dev/quantz-app",
       },
     ),
   ],

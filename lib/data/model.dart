@@ -59,16 +59,16 @@ class CVData {
       email: map['email'] as String,
       contactNumber: map['contactNumber'] as String,
       contactType: map['contactType'] as String,
-      skillTags: List<String>.from((map['skillTags'] as List<String>)),
-      interestTags: List<String>.from((map['interestTags'] as List<String>)),
-      hobbyTags: List<String>.from((map['hobbyTags'] as List<String>)),
+      skillTags: List<String>.from((map['skillTags'] as List).map((x) => x.toString())),
+      interestTags: List<String>.from((map['interestTags'] as List).map((x) => x.toString())),
+      hobbyTags: List<String>.from((map['hobbyTags'] as List).map((x) => x.toString())),
       experience: List<CVExperience>.from(
-        (map['experience'] as List<int>).map<CVExperience>(
+        (map['experience'] as List).map<CVExperience>(
           (x) => CVExperience.fromMap(x as Map<String, dynamic>),
         ),
       ),
       projects: List<CVProject>.from(
-        (map['projects'] as List<int>).map<CVProject>(
+        (map['projects'] as List).map<CVProject>(
           (x) => CVProject.fromMap(x as Map<String, dynamic>),
         ),
       ),
@@ -133,7 +133,7 @@ class CVExperience {
     return CVExperience(
       company: map['company'] as String,
       role: map['role'] as String,
-      bulletList: List<String>.from((map['bulletList'] as List<String>)),
+      bulletList: List<String>.from((map['bulletList'] as List).map((x) => x.toString())),
       started: DateTime.fromMillisecondsSinceEpoch(map['started'] as int),
       ended: DateTime.fromMillisecondsSinceEpoch(map['ended'] as int),
     );
@@ -170,8 +170,8 @@ class CVProject {
     return CVProject(
       name: map['name'] as String,
       summary: map['summary'] as String,
-      tags: List<String>.from((map['tags'] as List<String>)),
-      links: Map<PlatformType, String>.from((map['links'] as Map<PlatformType, String>)),
+      tags: List<String>.from((map['tags'] as List).map((x) => x.toString())),
+      links: Map<PlatformType, String>.from((map['links'] as Map).map((k, v) => MapEntry(PlatformType.values.firstWhere((e) => e.name == k), v as String))),
     );
   }
 
